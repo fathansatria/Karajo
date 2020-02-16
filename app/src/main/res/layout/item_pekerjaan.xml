@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="10dp"
+    app:cardCornerRadius="10dp"
+    android:background="@drawable/bg_item_pekerjaan"
+    android:layout_margin="10dp">
+
+    <LinearLayout
+        android:id="@+id/item_pekerjaan"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_margin="8dp">
+
+        <TextView
+            android:id="@+id/et_nama_kerjaan"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Membangun Masjid"
+            android:textColor="@color/colorAccent"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/et_jumlah_pelamar"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Terdapat 3 Pelamar"/>
+
+
+
+    </LinearLayout>
+
+
+
+</LinearLayout>

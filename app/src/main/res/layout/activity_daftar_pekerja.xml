@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/grey"
+    tools:context=".DaftarPekerja">
+
+    <include layout="@layout/toolbar_polos" android:id="@+id/toolbar_polos"/>
+
+    <LinearLayout
+        android:layout_margin="10dp"
+        android:layout_below="@id/toolbar_polos"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="@drawable/bg_item_pekerjaan">
+
+            <ImageView
+                android:id="@+id/iv_pekerjaan"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:minWidth="65dp"
+                android:minHeight="65dp"
+                android:layout_margin="18dp"
+                android:src="@drawable/kerjaan_sample"/>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_margin="15dp">
+
+                <TextView
+                    android:id="@+id/tv_nama_pekerjaan"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Membangun Masjid"
+                    android:textSize="22sp"
+                    android:textColor="@color/colorAccent"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:id="@+id/tv_gaji"
+                    android:layout_marginTop="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="16sp"
+                    android:textColor="@color/colorAccent"
+                    android:text="Gaji : 300.000 / Bulan"/>
+
+                <TextView
+                    android:id="@+id/tv_alamat"
+                    android:layout_marginTop="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="16sp"
+                    android:textColor="@color/colorAccent"
+                    android:text="Jl. Haji Harun no.33"
+                    android:layout_marginBottom="10dp"/>
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:text="Daftar Pelamar"
+            android:textStyle="bold"
+            android:textColor="@color/colorAccent"/>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rv_pelamar"
+            android:layout_marginTop="14dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+
+    </LinearLayout>
+
+</RelativeLayout>
